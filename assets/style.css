@@ -1,0 +1,94 @@
+/* WakeWell Corporate Style
+   Approx. 2001–2009
+   Internal visual consistency required
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Header */
+
+header {
+  background: linear-gradient(#e6ebf2, #cfd8e3);
+  border-bottom: 1px solid #b0bccd;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 10px 0 0 0;
+  font-size: 32px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #555555;
+}
+
+/* Main content */
+
+main {
+  max-width: 720px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border: 1px solid #d0d0d0;
+}
+
+/* Sections */
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #2b4a6f;
+  border-bottom: 1px solid #d0dbe8;
+  padding-bottom: 5px;
+}
+
+/* Links */
+
+a {
+  color: #2b4a6f;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #777777;
+  padding: 20px;
+  border-top: 1px solid #d0d0d0;
+  background-color: #f0f0f0;
+}
+
+/* Subtle “old web” feeling */
+
+img {
+  image-rendering: auto;
+}
+
+/* Accessibility / calm tone */
+
+p {
+  font-size: 14px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Staff Access | WakeWell</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .access-box {
+      max-width: 360px;
+      margin: 80px auto;
+      padding: 25px;
+      border: 1px solid #bbb;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+      letter-spacing: 4px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 6px 12px;
+      font-size: 13px;
+    }
+    .message {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>WakeWell</h1>
+    <p>Internal Access Portal</p>
+  </header>
+
+  <main>
+    <div class="access-box">
+      <p>
+        Authorized personnel only.<br>
+        Enter assigned access code.
+      </p>
+
+      <input type="text" id="code" maxlength="3" placeholder="---">
+
+      <button onclick="checkCode()">Access</button>
+
+      <div class="message" id="message"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>WakeWell © 2001–2009</p>
+  </footer>
+
+  <script>
+    function checkCode() {
+      const code = document.getElementById("code").value.toUpperCase();
+      const message = document.getElementById("message");
+
+      if (code === "315") {
+        message.innerText = "Access granted. Please proceed.";
+      } else {
+        message.innerText = "Invalid access code.";
+      }
+    }
+  </script>
+
+</body>
+</html>

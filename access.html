@@ -59,28 +59,23 @@
     <p>WakeWell © 2001–2009</p>
   </footer>
 
-  <script>
-    function checkCode() {
-      const code = document.getElementById("code").value.toUpperCase();
-      const message = document.getElementById("message");
+<script>
+function checkCode() {
+    const code = document.getElementById("code").value.toUpperCase();
+    const message = document.getElementById("message");
 
-     if (code === "315") {
-  message.innerHTML = `
-    <strong>INTERNAL NOTICE</strong><br><br>
-    This access point is no longer in use.<br><br>
-    Due to irregular outcomes observed during Phase-REM trials,
-    all secondary documentation has been archived offline.<br><br>
-    If you were instructed to access this terminal,
-    you already know why this message is incomplete.<br><br>
-    — WakeWell Internal Review Board
-  `;
-}
-
-      } else {
-        message.innerText = "Invalid access code.";
-      }
+    if (code === "315") {
+        message.innerHTML = `
+        <strong>INTERNAL NOTICE</strong><br><br>
+        This access point is no longer in use.<br>
+        Please refer to archived internal documentation.<br><br>
+        WakeWell Research Division
+        `;
+    } else {
+        message.innerHTML = `
+        <em>Invalid access code.</em><br>
+        This attempt has been logged.
+        `;
     }
-  </script>
-
-</body>
-</html>
+}
+</script>
